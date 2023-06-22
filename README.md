@@ -23,7 +23,7 @@ Install yubikey tools.
 
 	qubes-dom0-update ykpers
 
-Initialize the Yubikey for challenge/response in slot 2.
+Initialize the Yubikey for challenge/response in slot 2. Do this in a qube with ykpers, not dom0.
 
 	ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
 
@@ -41,7 +41,7 @@ Get response from yubikey.
 You may want to check which LUKS key slots are currently used. Make sure you use the correct device file.
 This may help if you want to replace your current password with a more secure backup password later.
 
-	sudo cryptsetup LuksDump /dev/sdXX
+	sudo cryptsetup luksDump /dev/sdXX
 
 Use the output from the previous command as new passphrase.
 
