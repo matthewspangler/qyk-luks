@@ -84,7 +84,7 @@ You can read more about "hide_all_usb" here: https://github.com/QubesOS/qubes-do
 
 Now we have to recreate the grub config and the initramfs.
 
-	sudo grub2-mkconfig > /boot/grub2/grub.cfg
+	sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 	sudo dracut -f
 
 That's it. After a reboot you should be able to unlock your LUKS partition with your password and your yubikey.
