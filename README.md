@@ -11,9 +11,8 @@ For ubuntu based distributions you may want to try this one: https://github.com/
 WARNING
 -------
 
-Please note that the current version is tested with a LVM-on-LUKS setup only. The default Qubes OS installation
-is a LUKS-on-LVM setup which will not work yet. Patches for LUKS-on-LVM are welcome as well as experienced testers
-because a dont have a LUKS-on-LVM installation to test with.
+Please note that the current version is mostly tested with a LVM-on-LUKS setup only. The default Qubes OS installation
+is a LUKS-on-LVM setup, which this repo only supports experimentally. Contributions and experienced testers are welcome!
 
 
 Initialize Yubikey
