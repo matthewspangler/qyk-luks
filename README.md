@@ -79,6 +79,8 @@ You may want to make a backup of your current initramfs. You can use the old ini
 2. Change the line with "rd.luks.uuid=..." in /etc/default/grub to "rd.ykluks.uuid=..."
 3. Change the line with "rd.qubes.hide_all_usb" in /etc/default/grub to "rd.ykluks.hide_all_usb"
 
+If "rd.qubes.hide_all_usb" is not present, add "rd.ykluks.hide_all_usb" to "GRUB_CMDLINE_LINUX".
+You can read more about "hide_all_usb" here: https://github.com/QubesOS/qubes-doc/blob/main/user/advanced-topics/usb-qubes.md
 
 Now we have to recreate the grub config and the initramfs.
 
